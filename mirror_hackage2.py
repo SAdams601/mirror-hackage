@@ -13,7 +13,7 @@ if len(sys.argv) < 2:
 base = sys.argv[1]
 
 os.chdir(base)
-os.remove("00-index.tar.gz")
+#os.remove("00-index.tar.gz")
 os.makedirs("package",0o777, True)
 
 subprocess.run(["wget", "http://hackage.haskell.org/packages/archive/00-index.tar.gz"])
